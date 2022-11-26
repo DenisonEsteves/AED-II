@@ -1,3 +1,11 @@
+/*
+Dado um array A com elementos a1, a2, ..., an. Suponha que mais da metade dos elementos de A 
+são iguais, os quais chamaremos de maioria. Descreva um algoritmo usando o paradigma Divisão e Conquista 
+para encontrar o valor desse elemento que representa a maioria dos elementos de A. Para isso, defina os 
+subproblemas de seu algoritmo, identificando a entrada e a saída de seus subproblemas. Com base nessa definição, 
+descreva o algoritmo que resolve o problema e apresente sua implementação (em Python, C ou C++). 
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
