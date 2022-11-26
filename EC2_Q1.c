@@ -1,3 +1,9 @@
+/*
+Dado um conjunto S de 1n20 inteiros e um inteiro positivo x. 
+Proponha e implemente um algoritmo que verifica se existe 
+um subconjunto de S cuja soma de seus elementos seja x.
+*/
+
 #include <stdio.h>
 
 #define N 20
