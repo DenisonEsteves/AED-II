@@ -10,7 +10,7 @@ char messageValidator(int nPattern, char* message, char* pattern){
         printf("Erro: a função deve receber como entrada um inteiro i (1 <= i <= 10^3) que representa o número de vezes que o padrão deve ocorrer, uma string na qual o padrão deve ser encontrado com até 10^3 caracteres, seguida do padrão a ser buscado com até 10^2 caracteres.\n");
         return;
     }
-    
+
     int memory[LEN_PATTERN_CONCATENED + 1][LEN_MESSAGE + 1];
     memset(memory, 0, (LEN_PATTERN_CONCATENED + 1)*(LEN_MESSAGE + 1)*sizeof(int) );
 
@@ -24,11 +24,10 @@ char messageValidator(int nPattern, char* message, char* pattern){
           memory[i][j] = 1 + memory[i-1][j-1];
         else
           memory[i][j] = memory[i - 1][j] > memory[i][j-1] ? memory[i - 1][j] : memory[i][j-1];
-      }
-    }
-    
+    }}
+
     int longestCommumSubsequence = memory[LEN_PATTERN_CONCATENED][LEN_MESSAGE];
-    
+
     if(longestCommumSubsequence == LEN_PATTERN_CONCATENED)
         return 'Y';
     else
@@ -39,8 +38,8 @@ int main(){
     char message[] = "SOME KIND OF TEXT OK";
     char pattern[] = "OK";
     int nPattern = 2;
-    
+
     printf("%c\n", messageValidator(nPattern, message, pattern));
-    
+
     return 0;
 }
