@@ -47,9 +47,8 @@ int main(int argc, char *argv[]) {
 /*
 Provando que o algoritmo guloso está correto:
 
+Começaremos supondo que existe uma solução que usa um número menor de frascos do que a solução encontrada pelo algoritmo. Então, tentaremos construir uma solução ainda melhor, contrariando nossa suposição inicial. Se conseguirmos fazer isso, então nossa suposição será falsa e poderemos concluir que o algoritmo está correto.
 Considere um conjunto de frascos {F1, F2, ..., Fn} que usa um número menor de frascos do que a solução encontrada pelo algoritmo. Ordenemos os frascos em ordem crescente de tamanho. Se o maior frasco Fk em {F1, F2, ..., Fn} for menor ou igual ao menor frasco F1 na solução encontrada pelo algoritmo, então podemos substituir F1 por Fk e obter uma solução ainda melhor. Isso contradiz nossa suposição de que a solução de {F1, F2, ..., Fn} é a melhor possível, portanto essa solução não existe.
-
 Se, por outro lado, o maior frasco Fk em {F1, F2, ..., Fn} for maior do que o menor frasco F1 na solução encontrada pelo algoritmo, então podemos substituir Fk por F1 e obter uma solução ainda melhor. Novamente, isso contradiz nossa suposição de que a solução de {F1, F2, ..., Fn} é a melhor possível, portanto essa solução também não existe.
-
 Como não conseguimos encontrar nenhuma solução que use um número menor de frascos do que a solução encontrada pelo algoritmo, podemos concluir que o algoritmo está correto.
 */
