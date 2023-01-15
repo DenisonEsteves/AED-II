@@ -1,3 +1,6 @@
+/*
+geração de subconjuntos de um conjunto V de números inteiros, tal que a soma dos elementos do subconjunto impresso seja ímpar.
+*/
 #include <stdio.h>
 #define n 3
 
